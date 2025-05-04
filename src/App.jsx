@@ -5,7 +5,6 @@ import { useSelector } from 'react-redux';
 import Login from './pages/AuthPages/Login';
 import Dashboard from './pages/MainPages/Dashboard';
 import CheckIn from './pages/MainPages/CheckIn';
-import Profile from './pages/MainPages/ProfilePage';
 import Tips from './pages/MainPages/Tips';
 import Signup from './pages/AuthPages/Signup';
 
@@ -30,7 +29,6 @@ const ProtectedRoute = ({ element }) => {
 };
 
 function App() {
-  const { token } = useSelector((state) => state.auth);
 
   return (
     <Routes>
@@ -41,7 +39,6 @@ function App() {
       {/* Use ProtectedRoute for secured pages */}
       <Route path="/dashboard" element={<ProtectedRoute element={<Dashboard />} />} />
       <Route path="/check-in" element={<ProtectedRoute element={<CheckIn />} />} />
-      {/* <Route path="/profile" element={<ProtectedRoute element={<Profile />} />} /> */}
       <Route path="/tips" element={<ProtectedRoute element={<Tips />} />} />
     </Routes>
   );

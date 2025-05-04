@@ -38,7 +38,10 @@ const Login = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ type: 'spring', stiffness: 120 }}
       >
-        <h2 className="text-3xl font-bold text-center text-indigo-600 mb-6">Welcome Back</h2>
+          <h1 className="text-4xl font-extrabold text-center text-indigo-600 mb-6 tracking-tight">
+          Mood Track
+        </h1>
+        <h2 className="text-3xl font-bold text-center text-gray-700 mb-6">Welcome Back</h2>
         <h3 className="text-xl font-semibold mb-4 text-center">Log In</h3>
         
         <Formik

@@ -39,7 +39,7 @@ const Signup = () => {
         className="w-full max-w-md bg-white rounded-2xl shadow-xl p-8"
       >
         <h1 className="text-4xl font-extrabold text-center text-indigo-600 mb-6 tracking-tight">
-          Mind Track
+          Mood Track
         </h1>
         <h2 className="text-xl font-semibold text-gray-700 text-center mb-6">Create Your Account</h2>
 

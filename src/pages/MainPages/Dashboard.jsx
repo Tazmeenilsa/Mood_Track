@@ -33,7 +33,7 @@ const Dashboard = () => {
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
             >
-                <h1 className="text-2xl font-bold mb-6">Welcome, {user?.name}</h1>
+                <h1 className="text-2xl font-bold mb-6">Welcome, {user?.name || user?.email}</h1>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
@@ -74,12 +74,12 @@ const Dashboard = () => {
                     {/* Mental Health Tip - Updated */}
                     <motion.div
                         className={`max-w-md mx-auto my-8 p-6 rounded-2xl shadow-xl text-center text-gray-800 transition-all duration-300 ${latestMood === 'Happy' ? 'bg-yellow-100' :
-                                latestMood === 'Sad' ? 'bg-blue-100' :
-                                    latestMood === 'Angry' ? 'bg-red-100' :
-                                        latestMood === 'Anxious' ? 'bg-indigo-100' :
-                                            latestMood === 'Excited' ? 'bg-pink-100' :
-                                                latestMood === 'Neutral' ? 'bg-gray-100' :
-                                                    'bg-white'
+                            latestMood === 'Sad' ? 'bg-blue-100' :
+                                latestMood === 'Angry' ? 'bg-red-100' :
+                                    latestMood === 'Anxious' ? 'bg-indigo-100' :
+                                        latestMood === 'Excited' ? 'bg-pink-100' :
+                                            latestMood === 'Neutral' ? 'bg-gray-100' :
+                                                'bg-white'
                             }`}
                         initial={{ opacity: 0, scale: 0.95 }}
                         animate={{ opacity: 1, scale: 1 }}

@@ -27,8 +27,8 @@ const Navbar = () => {
             <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
                 {/* Logo and Slogan */}
                 <div>
-                    <h1 className="text-2xl font-bold text-blue-600">MindTrack</h1>
-                    <p className="text-sm text-gray-500 -mt-1">Track your thoughts, transform your mind</p>
+                    <h1 className="text-2xl font-bold text-blue-600">MoodTrack - A Mental Health Log App</h1>
+                    <p className="text-sm text-gray-500 -mt-1 pt-2">Track your mood, transform your mind</p>
                 </div>
 
                 {/* Desktop Links */}
