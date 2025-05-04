@@ -22,3 +22,7 @@ A simple mood-tracking application where users can check in daily by selecting t
 - React Router
 - react-chartjs-2
 - chartjs-plugin-datalabels
+
+
+SDG Alignment:
+SDG 3 (Good Health and Well-being)
